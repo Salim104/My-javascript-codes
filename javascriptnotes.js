@@ -1,0 +1,28 @@
+
+
+/////////////////////////////////// Conditonals
+
+//   Logical operators
+//   Ternary Operator
+//   switch statement
+
+/////////////////////////////////// functions
+
+// Return keyword
+
+
+/////////////////////////////////// loops
+
+// Everything in that chapter
+
+
+
+/////////////////////////////////// iterators
+
+// Everything in that chapter
+
+
+
+/////////////////////////////////// Objects
+
+// Everything in that chapter
