@@ -35,7 +35,7 @@ function fizzBuzz(n) {
         } else if (i % 3 === 0) {
             console.log("Fizz");
         } else if (i % 5 === 0) {
-            console.log("Buzz");
+            console.log("Buzz"); 
         } else {
             console.log(i);
         }
@@ -55,14 +55,50 @@ returns a new array with the elements in reverse order. Do not use the built-in 
 
 */
 
-let arr = [1,2, 3, 4, 5];
+// let arr = [1,2, 3, 4, 5];
 
-function reverseArray(arr) {
-    let newArr = []
-    for (let i = arr.length - 1; i >= 0; i--) {
-        newArr.push(arr[i])
-    }
-    console.log(newArr)
-}
+// function reverseArray(arr) {
+//     let newArr = []
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         newArr.push(arr[i])
+//     }
+//     console.log(newArr)
+// }
 
-reverseArray(arr);
+// reverseArray(arr);
+
+////////////////////////////////////////////////    ---   JS Iterators               ---/////////////////////////////////////////////////
+
+////////////////// reduce()
+
+//reduce() = reduce the elements of an array to a single value
+
+const prices = [5,30,10,25,15,20]
+
+const total = prices.reduce((prev,next)=> {
+   return prev+next;
+})
+
+console.log(total)
+
+
+////////////////// forEach()
+// forEach() = method used to iterate over the elements in an array 
+// and apply a specific function on each element
+
+// const numbers = [2,5,7,9];
+
+// const doubled = numbers.forEach((number,index) => {
+//       console.log(`${index + 1}:${number}`);
+// })
+
+// console.log(doubled)
+
+
+const names = ['salim','musa','nakie'];
+
+const display = names.forEach((name) => {
+      console.log(name.toUpperCase());
+})
+
+console.log(display)

@@ -76,7 +76,9 @@ Common Use: To perform calculations, transform data, or determine outcomes that 
 
 /////////////////////////////////// loops
 
-// Everything in that chapter
+// reverse loop
+//for loop
+//while loop or do..while
 
 
 
