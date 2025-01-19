@@ -55,17 +55,17 @@ returns a new array with the elements in reverse order. Do not use the built-in 
 
 */
 
-// let arr = [1,2, 3, 4, 5];
+let arr = [1,2, 3, 4, 5];
 
-// function reverseArray(arr) {
-//     let newArr = []
-//     for (let i = arr.length - 1; i >= 0; i--) {
-//         newArr.push(arr[i])
-//     }
-//     console.log(newArr)
-// }
+function reverseArray(arr) {
+    let newArr = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(arr[i])
+    }
+    console.log(newArr)
+}
 
-// reverseArray(arr);
+reverseArray(arr);
 
 ////////////////////////////////////////////////    ---   JS Iterators               ---/////////////////////////////////////////////////
 
