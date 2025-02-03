@@ -1,21 +1,33 @@
-/*Exercise 1: 
+//question:Flattern an array of arrays
+// let arr = [[0,1],[2,3],[4,5]]
 
-Write a function that takes two arguments (age and country) and returns whether
-someone is eligible to vote in their 
-country. The eligibility criteria are that the person must
-be at least 18 years old and must be from a country where voting is
-allowed (assume the country parameter is a string).
- */
+// let flattern = arr.reduce((prev,curr) => prev.concat(curr),[])
+// console.log(flattern)
 
-let age = 18
-let country = "Rwanda";
 
-function eligibilityVote(theAge,theCountry){
-    if(theAge >= 18 && theCountry === "Rwanda" ){
-        console.log("allowed to vode") 
-    }else{
-        console.log("Not allowed") 
+
+//expected output : [0,1,2,3,4]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+// question:find the lagest prime number in an array using reduce method
+const arr = [1, 45, 73, 97, 2];
+
+// Function to check if a number is prime
+const isPrime = (num) => {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
     }
-}
+    return true;
+};
 
-eligibilityVote(age,country)
+// Find the largest prime number using reduce
+let largeNum = arr.reduce((prev, curr) => {
+    if (isPrime(curr) && curr > prev) {
+        return curr;
+    }
+    return prev;
+}, 0); // Initial value set to 0 (assuming all numbers are positive)
+
+console.log(largeNum);
